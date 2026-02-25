@@ -5,17 +5,22 @@
       "label": "build source",
       "type": "shell",
       "command": "g++",
-      "args": [
-        "source.cpp",
-        "list.cpp",
-        "-o",
-        "source"
-      ],
+      "args": ["source.cpp", "list.cpp", "-o", "source"],
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "run source",
+      "type": "shell",
+      "command": "./source.exe",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
     }
   ]
 }
+
